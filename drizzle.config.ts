@@ -1,12 +1,14 @@
-import { type Config } from "drizzle-kit";
 
+import { any, string } from "zod";
 import { env } from "~/env";
 
 export default {
-  schema: "./src/server/db/schema.ts",
+  path: "./src/server/db/schema.ts",
+  schema: string,
   dialect: "postgresql",
   dbCredentials: {
-    url: env.DATABASE_URL,
+   POSTGRES_URL: any,
   },
-  tablesFilter: ["t3gallery_*"],
-} satisfies Config;
+  tablesFilter: "string[]",
+  }
+
