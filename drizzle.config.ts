@@ -2,13 +2,13 @@
 import { any, string } from "zod";
 import { env } from "~/env";
 
+
 export default {
-  path: "./src/server/db/schema.ts",
-  schema: string,
+  schema:  "./src/server/db/schema.ts"
   dialect: "postgresql",
   dbCredentials: {
-   POSTGRES_URL: any,
+   POSTGRES_URL:env.POSTGRES_URL,
   },
-  tablesFilter: "string[]",
-  }
+  tablesFilter:  ["t3gallery_*"],
+} 
 

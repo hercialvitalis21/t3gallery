@@ -15,3 +15,8 @@
 - [ ]  Delete button with Server Actions
 - [ ]  Analytics (posthog)
 - [ ]  Rate limiting (upstash)
+
+## Links
+Instatus(https://www.tella.tv/welcome)
+
+uploadthing(https://uploadthing.com/dashboard/ot3tfoghws/files)
