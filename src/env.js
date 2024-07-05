@@ -1,5 +1,5 @@
 import { createEnv } from "@t3-oss/env-nextjs";
-import { z } from "zod";
+import { string, z } from "zod";
 
 export const env = createEnv({
   /**
@@ -7,7 +7,8 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    DATABASE_URL: z
+    POSTGRES_URL: 'string[]',
+    URL: z
     .string()
     .url(),
     
